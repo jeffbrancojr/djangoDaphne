@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ws = new WebSocket('ws://localhost:8000/echo/')
+    ws.onopen = function (e) {
+      ws.send("Hi I'm Jeff");
+    }
+</script>
+</body>
+</html>
